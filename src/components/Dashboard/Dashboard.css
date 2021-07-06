@@ -1,0 +1,29 @@
+.dash-type-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dash-type-selector-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.dash-type-selector {
+  text-align: center;
+  cursor: pointer;
+  color: rgb(91, 90, 90);
+  padding: 2rem 0 1rem 0;
+  width: 10rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+.dash-type-marker {
+  position: relative;
+  width: 10rem;
+  height: 0.3rem;
+  background-color: rgba(79, 79, 79, 0.8);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
