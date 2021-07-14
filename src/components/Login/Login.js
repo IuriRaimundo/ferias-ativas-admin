@@ -9,6 +9,11 @@ export default function Login() {
   const [isLoading, setIsLoading] = useState();
   const [feedback, setFeedback] = useState();
 
+  // Sair da página login caso o utilizar tenha a sessão iniciada
+  if (localStorage.getItem('token')) {
+    window.location.href = '/dashboard';
+  }
+
   const submitHandler = async (e) => {
     const body = {
       email: emailRef.current.value,

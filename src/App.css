@@ -2,7 +2,8 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat Light', sans-serif;
   margin: 0;
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
+  background-color: #fafafa;
 }
 
 :root {
