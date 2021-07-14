@@ -1,7 +1,6 @@
 export const request = (method, route, data, token) => {
   return new Promise((resolve, reject) => {
-    //let url = `https://feriasativas.herokuapp.com/${route}`;
-    let url = `http://localhost:8080/${route}`;
+    let url = `https://feriasativas.herokuapp.com/${route}`;
 
     const xhr = new XMLHttpRequest();
     xhr.open(method, url);
