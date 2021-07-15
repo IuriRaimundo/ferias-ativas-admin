@@ -1,7 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { useDashboardContext } from '../../../../utils/DashboardContext';
-import ToolButtons from '../../ToolButtons';
-import { request } from '../../../../utils/request';
 import Atividades from './Atividades';
 import Recados from './Recados';
 

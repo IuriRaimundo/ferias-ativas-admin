@@ -3,9 +3,6 @@ import { useDashboardContext } from '../../../../utils/DashboardContext';
 import ToolButtons from '../../ToolButtons';
 import { request } from '../../../../utils/request';
 
-// WORK
-// Image options
-
 function Atividades({ setShowModal }) {
   const { token } = useDashboardContext();
   const [feedback, setFeedback] = useState();
@@ -38,10 +35,6 @@ function Atividades({ setShowModal }) {
 
   const imagemRef = useRef();
 
-  const overlayImages = {
-    default: true,
-  };
-
   const submitHandler = (e) => {
     e.preventDefault();
     const requestBody = {
@@ -56,7 +49,6 @@ function Atividades({ setShowModal }) {
       },
       atividades: atividadesRefs.filter((ref) => ref.current?.value).map((ref) => ref.current.value),
       imagem: imagemRef.current.value,
-      overlay: overlayImages[imagemRef.current.value],
     };
 
     setIsLoading(true);
@@ -147,6 +139,16 @@ function Atividades({ setShowModal }) {
                   <p style={{ margin: 0, paddingRight: '0.7rem' }}>Imagem da atividade</p>
                   <select name='cars' id='cars' ref={imagemRef}>
                     <option value={'default'}>Padrão</option>
+                    <option value={'cineteatro'}>Cineteatro São Pedro</option>
+                    <option value={'biblioteca'}>Estátua da biblioteca</option>
+                    <option value={'biblioteca2'}>Biblioteca interior</option>
+                    <option value={'ponteDaPedra'}>Ponte da Pedra</option>
+                    <option value={'ponteDaPedra2'}>Ponte da Pedra 2</option>
+                    <option value={'olhosDeÁgua'}>Praia Fluvial dos Olhos De Água</option>
+                    <option value={'olhosDeÁgua2'}>Praia Fluvial dos Olhos De Água 2</option>
+                    <option value={'piscinas'}>Piscinas Municipais de Alcanena</option>
+                    <option value={'praça8deMaio'}>Praça 8 de maio</option>
+                    <option value={'grutas'}>Grutas do Alviela</option>
                   </select>
                 </span>
               </li>
